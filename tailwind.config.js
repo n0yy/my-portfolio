@@ -8,6 +8,11 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
+        josefin: ["Josefin", "Inter"],
+      },
+      colors: {
+        primary: "#3664A2",
+        secondary: "#91CCF2",
       },
     },
   },
