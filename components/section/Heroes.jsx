@@ -9,10 +9,12 @@ export default function Heroes() {
       <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0">
         <SocialMedia />
         <Image
+          blurDataURL="../../public/assets/img/me.png"
           src="/assets/img/me.png"
           height={350}
           width={350}
           alt="Danang Hapis Fadillah"
+          placeholder="blur"
         />
       </div>
       <div className="w-full lg:w-6/12 relative z-0">
