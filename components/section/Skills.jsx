@@ -56,7 +56,7 @@ export default function Skills() {
         </div>
       </div>
       <div className="pt-10 border-t border-white/30">
-        <ul className="flex flex-wrap gap-5 items-center justify-evenly">
+        <ul className="flex flex-wrap gap-5 items-center justify-center lg:justify-evenly">
           {stackList.map((item) => (
             <li key={item.id}>
               <Image

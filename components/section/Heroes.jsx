@@ -6,7 +6,7 @@ import SocialMedia from "../SocialMedia";
 export default function Heroes() {
   return (
     <section className="flex flex-col-reverse lg:flex-row items-center justify-evenly py-10 mt-3 lg:-mt-16 lg:pt-32 lg:py-12 mb-40 px-10 lg:px-36">
-      <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center -z-50">
+      <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0">
         <SocialMedia />
         <Image
           src="/assets/img/me.png"
@@ -15,8 +15,8 @@ export default function Heroes() {
           alt="Danang Hapis Fadillah"
         />
       </div>
-      <div className="w-full lg:w-6/12 relative -z-50">
-        <div className="w-32 h-32 rounded-full bg-gradient-to-b from-slate-400/10 blur-sm to-white/10 absolute right-0 -top-7 lg:-top-16 -z-50"></div>
+      <div className="w-full lg:w-6/12 relative z-0">
+        <div className="w-32 h-32 rounded-full bg-gradient-to-b from-slate-400/10 blur-sm to-white/10 absolute right-0 -top-7 lg:-top-16"></div>
         <h3 className="text-sm text-secondary font-josefin">Syncr0nate</h3>
         <h1 className="text-3xl font-josefin">I’m Danang Hapis Fadillah</h1>
         <p className="font-inter text-gray-500 tracking-wider text-sm font-extralight mt-3">

@@ -12,7 +12,7 @@ export default function SocialMedia() {
     {
       id: 2,
       name: "Instagram",
-      href: "instagram.com/__hapeace/",
+      href: "https://www.instagram.com/__hapeace/",
       imageURL: "/assets/logo/ig.png",
     },
     {
@@ -29,14 +29,20 @@ export default function SocialMedia() {
     },
   ];
   return (
-    <ul className="space-y-0 lg:space-y-5 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
+    <div className="space-y-0 lg:space-y-5 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
       {socialMedia.map((item) => (
-        <li className="cursor-pointer" key={item.id}>
-          <Link href={item.href}>
-            <Image src={item.imageURL} width={25} height={25} alt={item.name} />
-          </Link>
-        </li>
+        <Link href={item.href} passHref={true} key={item.id}>
+          <a>
+            <Image
+              src={item.imageURL}
+              width={25}
+              height={25}
+              alt={item.name}
+              quality={100}
+            />
+          </a>
+        </Link>
       ))}
-    </ul>
+    </div>
   );
 }
