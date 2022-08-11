@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
 import Heroes from "../components/section/Heroes";
+import Projects from "../components/section/Projects";
+import Skills from "../components/section/Skills";
 
 export default function Home() {
   return (
@@ -10,7 +12,8 @@ export default function Home() {
       </Head>
       <Layout>
         <Heroes />
-        <section></section>
+        <Skills />
+        <Projects />
         <section></section>
       </Layout>
     </>

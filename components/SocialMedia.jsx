@@ -29,7 +29,7 @@ export default function SocialMedia() {
     },
   ];
   return (
-    <ul className="space-y-5 pt-7">
+    <ul className="space-y-0 lg:space-y-5 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
       {socialMedia.map((item) => (
         <li className="cursor-pointer" key={item.id}>
           <Link href={item.href}>
