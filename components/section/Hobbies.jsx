@@ -1,6 +1,17 @@
 import Image from "next/image";
 import Header from "../Header";
 
+const Emoji = props => (
+  <span
+    className="emoji"
+    role="img"
+    aria-label={props.label ? props.label : ""}
+    aria-hidden={props.label ? "false" : "true"}
+  >
+    {props.symbol}
+  </span>
+)
+
 export default function Hobbies() {
   return (
     <section
@@ -13,7 +24,7 @@ export default function Hobbies() {
           When i get bored with coding, i usually climb mountains.
         </h1>
         <p className="text-slate-200 tracking-wider font-inter font-thin">
-          You can contact me if you want to hike together{" "}
+          You can contact me if you want to hike together <Emoji symbol="🤗" />
         </p>
       </div>
       <div className="w-full lg:w-6/12 flex items-center gap-3">
