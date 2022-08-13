@@ -31,6 +31,7 @@ export default function Skills() {
         <Header
           title="Skills"
           subTitle="Web Development and a bit of UI/UX Design"
+          emoji="🧐"
         />
         <div className="mt-10 lg:mt-0 flex items-center justify-evenly">
           {skills.map((skill) => (

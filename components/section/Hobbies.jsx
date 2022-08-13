@@ -1,16 +1,5 @@
 import Image from "next/image";
-import Header from "../Header";
-
-const Emoji = props => (
-  <span
-    className="emoji"
-    role="img"
-    aria-label={props.label ? props.label : ""}
-    aria-hidden={props.label ? "false" : "true"}
-  >
-    {props.symbol}
-  </span>
-)
+import Emoji from "../Emoji";
 
 export default function Hobbies() {
   return (
@@ -21,10 +10,11 @@ export default function Hobbies() {
       <div className="w-full lg:w-5/12">
         <h3 className="font-josefin text-sm text-primary">Hobbies</h3>
         <h1 className="font-josefin font-medium text-white text-3xl">
-          When i get bored with coding, i usually climb mountains.
+          When i get bored with coding, i usually climb mountains.{" "}
+          <Emoji symbol="🥱" />
         </h1>
         <p className="text-slate-200 tracking-wider font-inter font-thin">
-          You can contact me if you want to hike together <Emoji symbol="🤗" />
+          You can contact me if you want to hike together <Emoji symbol="🤙" />
         </p>
       </div>
       <div className="w-full lg:w-6/12 flex items-center gap-3">

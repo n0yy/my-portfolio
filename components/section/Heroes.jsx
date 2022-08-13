@@ -2,6 +2,7 @@ import Image from "next/image";
 import ButtonPrimary from "../ButtonPrimary";
 import ButtonSecondary from "../ButtonSecondary";
 import SocialMedia from "../SocialMedia";
+import Emoji from "../Emoji";
 
 export default function Heroes() {
   return (
@@ -17,15 +18,25 @@ export default function Heroes() {
           placeholder="blur"
         />
       </div>
-      <div className="w-full lg:w-6/12 relative z-0">
-        <div className="w-32 h-32 rounded-full bg-gradient-to-b from-slate-400/10 blur-sm to-white/10 absolute right-0 -top-7 lg:-top-16"></div>
+      <div className="w-full lg:w-6/12 z-0">
         <h3 className="text-sm text-secondary font-josefin">Syncr0nate</h3>
-        <h1 className="text-3xl font-josefin">I’m Danang Hapis Fadillah</h1>
-        <p className="font-inter text-gray-500 tracking-wider text-sm font-extralight mt-3">
+        <h1 className="text-3xl font-josefin">
+          I’m Danang Hapis Fadillah
+          <Emoji symbol="👋" />
+        </h1>
+        <p className="relative font-inter text-gray-500 tracking-wider text-sm font-extralight mt-3">
           Hello my name is Danang Hapis Fadillah 19 years old. I am a Front End
           Developer, I became interested in Front End world since 1 year ago. I
           am also a stoic, a school of philosophy from a philosopher from
           Citium, namely Zeno.
+          <span className="absolute right-0 -bottom-5 lg:-bottom-16">
+            <Image
+              src="/assets/img/zeno.png"
+              width={120}
+              height={170}
+              alt="Zeno of Citium"
+            />
+          </span>
         </p>
         <div className="mt-5 flex items-center space-x-3">
           <ButtonPrimary href="/assets/files/resume.pdf" name="Download CV" />
