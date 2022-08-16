@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Emoji from "../Emoji";
 
 export default function Contact() {
   const contacts = [
@@ -32,7 +33,7 @@ export default function Contact() {
       <div className="text-ellipsis w-full px-10 lg:px-0 lg:w-1/4 mx-auto">
         <h3 className="font-josefin text-sm text-secondary">Contact</h3>
         <h1 className="font-josefin text-slate-900 text-3xl text-ellipsis">
-          Let’s Discuss Your Project
+          Let’s Discuss Your Project <Emoji symbol="🤝" />
         </h1>
 
         {contacts.map((contact) => (

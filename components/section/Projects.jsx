@@ -29,6 +29,7 @@ export default function Projects() {
         title="Latest Project"
         subTitle="Lately I've been working on a slicing design"
         dark={true}
+        emoji="👷"
       />
       <div className="block space-y-16 lg:space-y-0 lg:flex justify-evenly items-start my-16">
         {projects.map((project) => (
