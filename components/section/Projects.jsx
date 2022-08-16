@@ -24,7 +24,7 @@ export default function Projects() {
   return (
     <section id="projects" className="relative px-10 lg:px-0 mb-40">
       <div className="absolute bottom-0 left-16 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
-      <div className="absolute -bottom-10 left-32 z-0 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
+      <div className="absolute -bottom-10 left-32 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
       <Header
         title="Latest Project"
         subTitle="Lately I've been working on a slicing design"
