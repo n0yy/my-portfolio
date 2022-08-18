@@ -10,16 +10,14 @@ export default function Heroes() {
       <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0">
         <SocialMedia />
         <Image
-          blurDataURL="../../public/assets/img/me.png"
           src="/assets/img/me.png"
           height={350}
           width={350}
           alt="Danang Hapis Fadillah"
-          placeholder="blur"
         />
       </div>
       <div className="w-full lg:w-6/12 z-0">
-        <h3 className="text-sm text-secondary font-josefin">Syncr0nate</h3>
+        <h3 className="text-sm text-primary font-josefin">Syncr0nate</h3>
         <h1 className="text-3xl font-josefin">
           I’m Danang Hapis Fadillah
           <Emoji symbol="👋" />
