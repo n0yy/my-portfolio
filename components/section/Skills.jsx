@@ -33,12 +33,12 @@ export default function Skills() {
           subTitle="Web Development and a bit of UI/UX Design"
           emoji="🧐"
         />
-        <div className="mt-10 lg:mt-0 flex items-center justify-evenly">
+        <div className="mt-10 lg:mt-0 flex flex-col lg:flex-row gap-5 items-center justify-evenly">
           {skills.map((skill) => (
             <div
               className={
                 skill.id == 2
-                  ? `flex flex-col items-center space-y-2 pt-32`
+                  ? `flex flex-col items-center space-y-2 pt-0 lg:pt-32`
                   : `flex flex-col items-center space-y-2`
               }
               key={skill.id}
