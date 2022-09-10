@@ -2,15 +2,9 @@ import Image from "next/image";
 import Emoji from "../Emoji";
 
 export default function Hobbies() {
-  const images = [
-    { id: 1, imgUrl: "/assets/img/hike1.png" },
-    { id: 2, imgUrl: "/assets/img/hike3.png" },
-    { id: 3, imgUrl: "/assets/img/hike2.png" },
-    { id: 4, imgUrl: "/assets/img/hike4.png" },
-  ];
   return (
     <section
-      id="hobbies"
+      id="hobby"
       className="px-10 lg:px-36 bg-gradient-to-bl from-primary to-secondary py-7 flex flex-col lg:flex-row items-center justify-evenly lg:justify-between min-h-screen"
     >
       <div className="w-full lg:w-5/12">

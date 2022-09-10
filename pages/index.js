@@ -10,7 +10,12 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Syncr0nate</title>
+        <meta charSet="utf-8" />
+        <meta
+          name="description"
+          content="A Portfolio Web, build by my self | Sync0nate | Danang Hapis Fadillah"
+        />
       </Head>
       <Layout>
         <Heroes />
