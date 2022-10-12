@@ -10,9 +10,14 @@ export default function Navbar() {
     { id: 4, name: "Hobby", url: "#hobby" },
   ];
   const [menu, setMenu] = useState(false);
+
+  function hideOverlay() {
+    setMenu(false);
+  }
+
   return (
     <>
-      <nav className="flex items-center justify-between px-5 lg:px-36 py-4 lg:py-5 bg-dark/90 backdrop-blur-sm fixed top-0 right-0 w-full z-50">
+      <nav className="flex items-center justify-between px-10 lg:px-36 py-4 lg:py-5 bg-dark/90 backdrop-blur-sm fixed top-0 right-0 w-full z-50">
         <div>
           <h1 className="text-lg lg:text-xl font-josefin font-bold text-white">
             Syncr0nate
@@ -20,10 +25,10 @@ export default function Navbar() {
         </div>
         <div>
           <ul
-            className={`hidden lg:flex space-x-7 text-sm font-inter font-light`}
+            className={`hidden md:flex space-x-7 text-sm font-inter font-light`}
           >
             {menuLinks.map((menu) => (
-              <li key={menu.id} onClick={() => setMenu(false)}>
+              <li key={menu.id} onClick={hideOverlay}>
                 <Link href={menu.url}>
                   <a className={`text-gray-300 hover:text-gray-700`}>
                     {menu.name}
@@ -33,12 +38,12 @@ export default function Navbar() {
             ))}
           </ul>
         </div>
-        <div className="hidden lg:block">
+        <div className="hidden md:block">
           <ButtonPrimary href="#contact" name="Contact Me" />
         </div>
 
         {/* for mobile */}
-        <span className={`lg:hidden`} onClick={() => setMenu(true)}>
+        <span className={`md:hidden`} onClick={() => setMenu(true)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-6 w-6 text-white"
@@ -62,7 +67,7 @@ export default function Navbar() {
           menu ? "translate-x-0" : "-translate-x-full"
         } w-full min-h-screen bg-dark p-10 transition top-0 z-50 fixed`}
       >
-        <span className="absolute right-5" onClick={() => setMenu(false)}>
+        <span className="absolute right-5" onClick={hideOverlay}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             className="h-7 w-7 text-white"

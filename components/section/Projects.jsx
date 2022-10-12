@@ -39,7 +39,7 @@ export default function Projects() {
         title="Latest Project"
         subTitle="Lately I've been working on a slicing design"
       />
-      <div className="block space-y-16 lg:space-y-0 lg:flex justify-evenly w-full lg:w-8/12 flex-wrap items-center my-16 gap-10">
+      <div className="block space-y-16 lg:space-y-0 sm:flex justify-evenly w-full sm:w-8/12 flex-wrap items-center my-16 gap-10">
         {projects.map((project) => (
           <div
             className={`${
