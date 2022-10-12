@@ -11,8 +11,9 @@ module.exports = {
         josefin: ["Josefin Sans", "Inter"],
       },
       colors: {
-        primary: "#3664A2",
-        secondary: "#91CCF2",
+        dark: "#1C1C1C",
+        primary: "#66ADE1",
+        secondary: "#01EC64",
       },
     },
   },

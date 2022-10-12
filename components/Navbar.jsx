@@ -12,9 +12,9 @@ export default function Navbar() {
   const [menu, setMenu] = useState(false);
   return (
     <>
-      <nav className="flex items-center justify-between px-5 lg:px-36 py-4 lg:py-5 bg-white/10 backdrop-blur-xl">
+      <nav className="flex items-center justify-between px-5 lg:px-36 py-4 lg:py-5 bg-dark/90 backdrop-blur-sm fixed top-0 right-0 w-full z-50">
         <div>
-          <h1 className="text-lg lg:text-xl font-josefin font-bold text-slate-900">
+          <h1 className="text-lg lg:text-xl font-josefin font-bold text-white">
             Syncr0nate
           </h1>
         </div>
@@ -25,7 +25,7 @@ export default function Navbar() {
             {menuLinks.map((menu) => (
               <li key={menu.id} onClick={() => setMenu(false)}>
                 <Link href={menu.url}>
-                  <a className={`text-gray-500 hover:text-gray-700`}>
+                  <a className={`text-gray-300 hover:text-gray-700`}>
                     {menu.name}
                   </a>
                 </Link>
@@ -41,7 +41,7 @@ export default function Navbar() {
         <span className={`lg:hidden`} onClick={() => setMenu(true)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-6 w-6 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -60,12 +60,12 @@ export default function Navbar() {
       <div
         className={`${
           menu ? "translate-x-0" : "-translate-x-full"
-        } w-full min-h-screen bg-white p-10 transition absolute top-0 z-50`}
+        } w-full min-h-screen bg-dark p-10 transition top-0 z-50 fixed`}
       >
         <span className="absolute right-5" onClick={() => setMenu(false)}>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-7 w-7"
+            className="h-7 w-7 text-white"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -82,15 +82,20 @@ export default function Navbar() {
           {menuLinks.map((menu) => (
             <li key={menu.id}>
               <Link href={menu.url}>
-                <a className={`text-gray-500 hover:text-gray-700`}>
+                <a className={`text-gray-300 hover:text-gray-700`}>
                   {menu.name}
                 </a>
               </Link>
             </li>
           ))}
         </ul>
-        <div className="mt-10 block">
-          <ButtonPrimary href="#contact" name="Contact Me" />
+        <div className="mt-10">
+          <Link href="#contact">
+            <a className="relative text-white px-7 py-2 bg-dark rounded-md">
+              <div className="absolute inset-0 -z-10 bg-gradient-to-br from-primary to-secondary blur-[2px] rounded-md"></div>
+              Contact Me
+            </a>
+          </Link>
         </div>
       </div>
     </>

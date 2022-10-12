@@ -31,9 +31,9 @@ export default function Contact() {
   return (
     <section id="contact" className="my-40">
       <div className="text-ellipsis w-full px-10 lg:px-0 lg:w-1/4 mx-auto">
-        <h3 className="font-josefin text-sm text-secondary">Contact</h3>
-        <h1 className="font-josefin text-slate-900 text-3xl text-ellipsis">
-          Let’s Discuss Your Project <Emoji symbol="🤝" />
+        <h3 className="font-josefin text-sm text-slate-300">Contact</h3>
+        <h1 className="font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">
+          Let’s Discuss Your Project
         </h1>
 
         {contacts.map((contact) => (
@@ -41,7 +41,7 @@ export default function Contact() {
             className="mt-10 flex items-center space-x-3 border-t py-5"
             key={contact.id}
           >
-            <span className="bg-secondary p-2 flex items-center justify-center w-12 h-12 rounded-full">
+            <span className="bg-primary secondary p-2 flex items-center justify-center w-12 h-12 rounded-full">
               <Image
                 src={contact.logoURL}
                 width={contact.width}
@@ -50,8 +50,8 @@ export default function Contact() {
               />
             </span>
             <div className="font-josefin space-y-0">
-              <h6 className="text-secondary text-xs">{contact.name}</h6>
-              <p className="text-slate-700">{contact.content}</p>
+              <h6 className="text-slate-200 text-xs">{contact.name}</h6>
+              <p className="text-slate-100">{contact.content}</p>
             </div>
           </div>
         ))}

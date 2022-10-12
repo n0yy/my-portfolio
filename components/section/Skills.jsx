@@ -17,7 +17,7 @@ export default function Skills() {
     { id: 2, imageURL: "/assets/logo/react.png", width: 55, height: 50 },
     { id: 3, imageURL: "/assets/logo/next.png", width: 67, height: 40 },
     { id: 4, imageURL: "/assets/logo/mongo.png", width: 18, height: 40 },
-    { id: 5, imageURL: "/assets/logo/firebase.png", width: 30, height: 40 },
+    { id: 5, imageURL: "/assets/logo/mysql.png", width: 70, height: 48 },
     { id: 6, imageURL: "/assets/logo/bootstrap.png", width: 50, height: 40 },
     { id: 7, imageURL: "/assets/logo/tailwind.png", width: 66, height: 40 },
   ];
@@ -25,7 +25,7 @@ export default function Skills() {
   return (
     <section
       id="skills"
-      className="bg-gradient-to-b from-primary to-secondary px-10 lg:px-36 py-7 font-inter min-h-screen flex flex-col justify-between mb-40"
+      className="lg:px-36 py-7 font-inter min-h-screen flex flex-col justify-between mb-40"
     >
       <div>
         <Header
@@ -33,7 +33,7 @@ export default function Skills() {
           subTitle="Web Development and a bit of UI/UX Design"
           emoji="🧐"
         />
-        <div className="mt-10 lg:mt-0 flex flex-col lg:flex-row gap-5 items-center justify-evenly">
+        <div className="mt-10 lg:mt-0 flex flex-col lg:flex-row gap-5 items-center space-y-5 lg:space-y-0 justify-evenly">
           {skills.map((skill) => (
             <div
               className={
@@ -56,7 +56,7 @@ export default function Skills() {
           ))}
         </div>
       </div>
-      <div className="pt-10 border-t border-white/30">
+      <div className="pt-10 border-t border-white/30 px-3 mx-3 mt-10 lg:mt-0">
         <ul className="flex flex-wrap gap-5 items-center justify-center lg:justify-evenly">
           {stackList.map((item) => (
             <li key={item.id}>

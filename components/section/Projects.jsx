@@ -19,27 +19,37 @@ export default function Projects() {
       codeURL: "https://github.com/syncr0nate/collosal",
       imageURL: "/assets/img/project2.png",
     },
+    {
+      id: 3,
+      name: "Hoobank | Modern Bank",
+      demoURL: "#",
+      codeURL: "#",
+      imageURL: "/assets/img/project3.png",
+    },
   ];
 
   return (
-    <section id="projects" className="relative px-10 lg:px-0 mb-40">
+    <section
+      id="projects"
+      className="relative px-10 lg:px-0 mb-40 flex flex-col items-center justify-center"
+    >
       <div className="absolute bottom-0 left-16 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
       <div className="absolute -bottom-10 left-32 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
       <Header
         title="Latest Project"
         subTitle="Lately I've been working on a slicing design"
-        dark={true}
-        emoji="👷"
       />
-      <div className="block space-y-16 lg:space-y-0 lg:flex justify-evenly items-start my-16">
+      <div className="block space-y-16 lg:space-y-0 lg:flex justify-evenly w-full lg:w-8/12 flex-wrap items-center my-16 gap-10">
         {projects.map((project) => (
           <div
             className={`${
               project.id == 2 && "lg:mt-20"
-            } border-t border-primary/50 py-5 space-y-5`}
+            } border-t border-white/50 py-5 space-y-5`}
             key={project.id}
           >
-            <h3 className="text-2xl font-josefin mb-2">{project.name}</h3>
+            <h3 className="text-xl lg:text-2xl font-josefin mb-2 text-white py-2">
+              {project.name}
+            </h3>
             <Image
               src={project.imageURL}
               width={400}
