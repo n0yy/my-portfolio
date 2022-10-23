@@ -8,7 +8,7 @@ module.exports = {
     extend: {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        josefin: ["Josefin Sans", "Inter"],
+        josefin: ["Josefin Sans", "Inter", "sans-serif"],
       },
       colors: {
         dark: "#1C1C1C",
