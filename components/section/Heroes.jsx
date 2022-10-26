@@ -9,7 +9,7 @@ export default function Heroes() {
     <section className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-10 lg:px-36">
       <Link href="https://www.showwcase.com/syncr0nate">
         <div className="flex items-center justify-center py-1 mx-auto border border-primary rounded-md text-white shadow shadow-primary text-sm w-[290px] mb-10 lg:mb-0 cursor-pointer hover:shadow-lg">
-          <Image src="/assets/logo/showwcase.png" width={36} height={36} />
+          <Image src="/assets/logo/showwcase.png" width={36} height={36} alt="Showwcase Icon" priority />
           <span className="">
             You can find me in{" "}
             <span className="text-transparent bg-clip-text font-bold bg-gradient-to-r from-primary to-secondary">
@@ -28,14 +28,15 @@ export default function Heroes() {
             height={350}
             width={350}
             alt="Danang Hapis Fadillah"
+            priority
           />
         </div>
         <div className="w-full lg:w-6/12 z-0">
           <h3 className="text-sm text-white/30 font-josefin">Syncr0nate</h3>
-          <h1 className="text-3xl font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <h1 className="text-3xl font-semibold font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             I’m Danang Hapis Fadillah
           </h1>
-          <p className="font-inter text-gray-500 tracking-wider text-sm font-extralight mt-3">
+          <p className="font-inter text-gray-500 tracking-wider text-sm font-extralight mt-1">
             Hello my name is Danang Hapis Fadillah 19 years old. I am a Front
             End Developer, I became interested in Front End world since 1 year
             ago. I am also a stoic, a school of philosophy from a philosopher

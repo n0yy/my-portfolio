@@ -21,6 +21,7 @@ export default function Hobbies() {
               width={330}
               height={190}
               quality={100}
+              alt={img}
             />
           </div>
         ))}
