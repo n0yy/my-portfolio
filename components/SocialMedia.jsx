@@ -27,6 +27,12 @@ export default function SocialMedia() {
       href: "https://twitter.com/syncr0nate",
       imageURL: "/assets/logo/twitter.png",
     },
+    {
+      id: 5,
+      name: "LinkedIn",
+      href: "https://www.linkedin.com/in/danang-hapis-fadillah-682878202/",
+      imageURL: "/assets/logo/link.png"
+    }
   ];
   return (
     <div className="space-y-0 lg:space-y-7 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
