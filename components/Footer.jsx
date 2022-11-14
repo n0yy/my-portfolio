@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <footer className="px-10 lg:px-36">
-      <div className="border-t py-3 text-center text-xs font-josefin text-slate-500 flex items-center justify-center space-x-1">
+      <div className="border-t border-white/20 py-3 text-center text-xs font-josefin text-slate-500 flex items-center justify-center space-x-1">
         <p>2022, Built by Syncr0nate with </p>
         <span>
           <svg

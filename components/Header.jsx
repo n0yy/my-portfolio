@@ -8,7 +8,7 @@ export default function Header({ title, subTitle }) {
       >
         {title}
       </h1>
-      <h3 className={`text-slate-400 text-sm lg:text-lg`}>{subTitle}</h3>
+      <h3 className={`text-slate-400 text-sm lg:text-lg mt-2`}>{subTitle}</h3>
     </header>
   );
 }

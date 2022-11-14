@@ -38,7 +38,7 @@ export default function Contact() {
 
         {contacts.map((contact) => (
           <div
-            className="mt-10 flex items-center space-x-3 border-t py-5"
+            className="mt-10 flex items-center space-x-3 border-t border-white/10 py-5"
             key={contact.id}
           >
             <span className="bg-primary secondary p-2 flex items-center justify-center w-12 h-12 rounded-full">

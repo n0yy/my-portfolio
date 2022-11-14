@@ -54,7 +54,7 @@ export default function Projects() {
               src={project.imageURL}
               width={400}
               height={250}
-              alt="Wumbo"
+              alt={project.name}
             />
             <div className="flex items-center space-x-3">
               <ButtonPrimary href={project.demoURL} name="View Demo" />
