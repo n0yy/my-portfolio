@@ -10,6 +10,7 @@ export default function Navbar() {
     { id: 3, name: "Projects", url: "#projects" },
     { id: 4, name: "Hobby", url: "#hobby" },
   ];
+
   const [menu, setMenu] = useState(false);
 
   function hideOverlay() {
@@ -63,7 +64,11 @@ export default function Navbar() {
         {/* end for mobile */}
       </nav>
       {/* overlay */}
-      <OverlayNavbar menu={menu} hideOverlay={hideOverlay} menuLinks={menuLinks} />
+      <OverlayNavbar
+        menu={menu}
+        hideOverlay={hideOverlay}
+        menuLinks={menuLinks}
+      />
     </>
   );
 }

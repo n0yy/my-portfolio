@@ -9,7 +9,13 @@ export default function Heroes() {
     <section className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-10 lg:px-36">
       <Link href="https://www.showwcase.com/syncr0nate">
         <div className="flex items-center justify-center py-1 mx-auto border border-primary rounded-md text-white shadow shadow-primary text-sm w-[290px] mb-10 lg:mb-0 cursor-pointer hover:shadow-lg">
-          <Image src="/assets/logo/showwcase.png" width={36} height={36} alt="Showwcase Icon" priority />
+          <Image
+            src="/assets/logo/showwcase.png"
+            width={36}
+            height={36}
+            alt="Showwcase Icon"
+            priority
+          />
           <span className="">
             You can find me in{" "}
             <span className="text-transparent bg-clip-text font-bold bg-gradient-to-r from-primary to-secondary">
@@ -20,8 +26,8 @@ export default function Heroes() {
       </Link>
       <div className="flex flex-col-reverse lg:flex-row items-center justify-evenly">
         <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0 relative">
-          <div className="absolute w-64 h-64 bg-primary/50 rounded-full inset-0 blur-3xl"></div>
-          <div className="absolute w-56 h-56 bg-secondary/50 rounded-full inset-36 blur-3xl"></div>
+          <div className="absolute w-64 h-64 bg-primary/50 rounded-full inset-0 blur-3xl transform-all animate-pulse"></div>
+          <div className="absolute w-56 h-56 bg-secondary/50 rounded-full inset-36 blur-3xl animate-pulse"></div>
           <SocialMedia />
           <Image
             src="/assets/img/me.png"
