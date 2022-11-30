@@ -31,7 +31,7 @@ export default function Projects() {
   return (
     <section
       id="projects"
-      className="relative px-10 lg:px-0 mb-40 flex flex-col items-center justify-center"
+      className="relative px-8 lg:px-0 mb-40 flex flex-col items-center justify-center"
     >
       <div className="absolute bottom-0 left-16 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
       <div className="absolute -bottom-10 left-32 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
@@ -44,7 +44,7 @@ export default function Projects() {
           <div
             className={`${
               project.id == 2 && "lg:mt-20"
-            } border-t border-white/50 py-5 space-y-5`}
+            } border-t border-white/10 py-5 space-y-5`}
             key={project.id}
           >
             <h3 className="text-xl lg:text-2xl font-josefin mb-2 text-white py-2">

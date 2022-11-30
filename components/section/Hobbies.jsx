@@ -5,7 +5,7 @@ export default function Hobbies() {
   return (
     <section
       id="hobby"
-      className="px-10 lg:px-36 py-7 flex flex-col items-center min-h-screen"
+      className="px-8 lg:px-36 py-7 flex flex-col items-center min-h-screen"
     >
       <div className="w-full lg:w-5/12 mb-10 lg:mb-0">
         <Header

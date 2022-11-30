@@ -30,7 +30,7 @@ export default function Contact() {
   ];
   return (
     <section id="contact" className="my-40">
-      <div className="text-ellipsis w-full px-10 lg:px-0 lg:w-1/4 mx-auto">
+      <div className="text-ellipsis w-full px-8 lg:px-0 lg:w-1/4 mx-auto">
         <h3 className="font-josefin text-sm text-slate-300">Contact</h3>
         <h1 className="font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">
           Let’s Discuss Your Project

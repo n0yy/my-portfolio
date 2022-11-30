@@ -6,7 +6,7 @@ import SocialMedia from "../SocialMedia";
 
 export default function Heroes() {
   return (
-    <section className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-10 lg:px-36">
+    <section className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-8 lg:px-36">
       <Link href="https://www.showwcase.com/syncr0nate">
         <div className="flex items-center justify-center py-1 mx-auto border border-primary rounded-md text-white shadow shadow-primary text-sm w-[290px] mb-10 lg:mb-0 cursor-pointer hover:shadow-lg">
           <Image
