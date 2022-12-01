@@ -1,14 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
-import ButtonPrimary from "../ButtonPrimary";
-import ButtonSecondary from "../ButtonSecondary";
-import SocialMedia from "../SocialMedia";
+import { motion } from "framer-motion";
+import { ButtonPrimary, ButtonSecondary, SocialMedia } from "../../components";
 
 export default function Heroes() {
   return (
-    <section className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-8 lg:px-36">
+    <motion.section
+      className="py-24 lg:-mt-16 lg:pt-52 lg:py-12 mb-40 px-8 lg:px-36"
+      initial={{ x: -100 }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", bounce: 0.25, duration: 0.5 }}
+    >
       <Link href="https://www.showwcase.com/syncr0nate">
-        <div className="flex items-center justify-center py-1 mx-auto border border-primary rounded-md text-white shadow shadow-primary text-sm w-[290px] mb-10 lg:mb-0 cursor-pointer hover:shadow-lg">
+        <motion.div
+          whileHover={{ scale: 1.075 }}
+          whileTap={{ scale: 0.95 }}
+          className="flex items-center justify-center py-1 mx-auto border border-primary rounded-md text-white shadow shadow-primary text-sm w-[290px] mb-10 lg:mb-0 cursor-pointer hover:shadow-lg"
+        >
           <Image
             src="/assets/logo/showwcase.png"
             width={36}
@@ -22,8 +30,9 @@ export default function Heroes() {
               Showwcase
             </span>
           </span>
-        </div>
+        </motion.div>
       </Link>
+
       <div className="flex flex-col-reverse lg:flex-row items-center justify-evenly">
         <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0 relative">
           <div className="absolute w-64 h-64 bg-primary/50 rounded-full inset-0 blur-3xl transform-all animate-pulse"></div>
@@ -61,6 +70,6 @@ export default function Heroes() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }

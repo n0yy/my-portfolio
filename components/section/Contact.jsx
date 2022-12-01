@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Emoji from "../Emoji";
+import { motion } from "framer-motion";
 
 export default function Contact() {
   const contacts = [
@@ -29,7 +29,13 @@ export default function Contact() {
     },
   ];
   return (
-    <section id="contact" className="my-40">
+    <motion.section
+      id="contact"
+      className="my-40"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+    >
       <div className="text-ellipsis w-full px-8 lg:px-0 lg:w-1/4 mx-auto">
         <h3 className="font-josefin text-sm text-slate-300">Contact</h3>
         <h1 className="font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary text-3xl">
@@ -56,6 +62,6 @@ export default function Contact() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

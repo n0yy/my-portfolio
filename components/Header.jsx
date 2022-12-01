@@ -1,5 +1,3 @@
-import Emoji from "./Emoji";
-
 export default function Header({ title, subTitle }) {
   return (
     <header className={`text-center lg:py-10 font-josefin`}>

@@ -1,11 +1,15 @@
 import Image from "next/image";
 import Header from "../Header";
+import { motion } from "framer-motion";
 
 export default function Hobbies() {
   return (
-    <section
+    <motion.section
       id="hobby"
       className="px-8 lg:px-36 py-7 flex flex-col items-center min-h-screen"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
     >
       <div className="w-full lg:w-5/12 mb-10 lg:mb-0">
         <Header
@@ -26,6 +30,6 @@ export default function Hobbies() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

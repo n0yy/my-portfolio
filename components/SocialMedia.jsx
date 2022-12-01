@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function SocialMedia() {
   const socialMedia = [
@@ -31,14 +32,14 @@ export default function SocialMedia() {
       id: 5,
       name: "LinkedIn",
       href: "https://www.linkedin.com/in/danang-hapis-fadillah-682878202/",
-      imageURL: "/assets/logo/link.png"
-    }
+      imageURL: "/assets/logo/link.png",
+    },
   ];
   return (
     <div className="space-y-0 lg:space-y-7 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
       {socialMedia.map((item) => (
         <Link href={item.href} passHref={true} key={item.id}>
-          <a>
+          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.925 }}>
             <Image
               src={item.imageURL}
               width={25}
@@ -46,7 +47,7 @@ export default function SocialMedia() {
               alt={item.name}
               quality={100}
             />
-          </a>
+          </motion.a>
         </Link>
       ))}
     </div>

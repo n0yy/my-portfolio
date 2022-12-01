@@ -20,7 +20,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-between px-10 lg:px-36 py-4 lg:py-5 bg-dark/90 backdrop-blur-sm fixed top-0 right-0 w-full z-50">
+      <nav className="flex items-center justify-between px-8 lg:px-36 py-4 lg:py-5 bg-dark/90 backdrop-blur-sm fixed top-0 right-0 w-full z-50">
         <div>
           <h1 className="text-lg lg:text-xl font-josefin font-bold text-white">
             Syncr0nate

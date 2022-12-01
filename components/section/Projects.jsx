@@ -2,6 +2,7 @@ import Image from "next/image";
 import Header from "../Header";
 import ButtonPrimary from "../ButtonPrimary";
 import ButtonSecondary from "../ButtonSecondary";
+import { motion } from "framer-motion";
 
 export default function Projects() {
   const projects = [
@@ -29,9 +30,12 @@ export default function Projects() {
   ];
 
   return (
-    <section
+    <motion.section
       id="projects"
       className="relative px-8 lg:px-0 mb-40 flex flex-col items-center justify-center"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
     >
       <div className="absolute bottom-0 left-16 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
       <div className="absolute -bottom-10 left-32 -z-50 w-36 h-36 rounded-full bg-gradient-to-b from-secondary/20 to-secondary/5"></div>
@@ -67,6 +71,6 @@ export default function Projects() {
           </div>
         ))}
       </div>
-    </section>
+    </motion.section>
   );
 }

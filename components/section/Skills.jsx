@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Header from "../Header";
+import { motion } from "framer-motion";
 
 export default function Skills() {
   const skills = [
@@ -23,9 +24,12 @@ export default function Skills() {
   ];
 
   return (
-    <section
+    <motion.section
       id="skills"
       className="lg:px-36 py-7 font-inter min-h-screen flex flex-col justify-between mb-40"
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: false }}
     >
       <div>
         <Header
@@ -69,6 +73,6 @@ export default function Skills() {
           ))}
         </ul>
       </div>
-    </section>
+    </motion.section>
   );
 }
