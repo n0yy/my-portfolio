@@ -7,3 +7,20 @@
 .shadow-gradient {
     box-shadow: 0 0 0.75rem linear-gradient(to right, #66ADE1, #01EC64);
 }
+
+::-webkit-scrollbar {
+    width: 0.8em;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(28, 28, 28)
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #257ebe5c;
+    border-radius: 1em;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #66aee195;
+}
