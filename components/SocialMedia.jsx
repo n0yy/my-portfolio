@@ -39,7 +39,11 @@ export default function SocialMedia() {
     <div className="space-y-0 lg:space-y-7 pt-3 lg:pt-7 flex lg:flex-col space-x-5 lg:space-x-0">
       {socialMedia.map((item) => (
         <Link href={item.href} passHref={true} key={item.id}>
-          <motion.a whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.925 }}>
+          <motion.a
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.925 }}
+            target="_blank"
+          >
             <Image
               src={item.imageURL}
               width={25}
