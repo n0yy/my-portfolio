@@ -35,8 +35,8 @@ export default function Heroes() {
 
       <div className="flex flex-col-reverse lg:flex-row items-center justify-evenly">
         <div className="w-full lg:w-5/12 flex flex-col-reverse lg:flex-row items-center z-0 relative">
-          <div className="absolute w-64 h-64 bg-primary/50 rounded-full inset-0 blur-3xl transform-all animate-pulse"></div>
-          <div className="absolute w-56 h-56 bg-secondary/50 rounded-full inset-36 blur-3xl animate-pulse"></div>
+          <div className="absolute w-64 h-64 bg-primary/50 rounded-full inset-0 blur-3xl transform-all animate-pulse -z-10"></div>
+          <div className="absolute w-56 h-56 bg-secondary/50 rounded-full inset-36 blur-3xl animate-pulse -z-10"></div>
           <SocialMedia />
           <Image
             src="/assets/img/me.png"

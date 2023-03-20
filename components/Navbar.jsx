@@ -33,9 +33,9 @@ export default function Navbar() {
             {menuLinks.map((menu) => (
               <li key={menu.id}>
                 <Link href={menu.url}>
-                  <a className={`text-gray-300 hover:text-gray-700`}>
+                  <span className={`text-gray-300 hover:text-gray-700`}>
                     {menu.name}
-                  </a>
+                  </span>
                 </Link>
               </li>
             ))}
