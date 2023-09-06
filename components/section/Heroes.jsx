@@ -49,13 +49,38 @@ export default function Heroes() {
         <div className="w-full lg:w-6/12 z-0">
           <h3 className="text-sm text-white/30 font-josefin">Syncr0nate</h3>
           <h1 className="text-3xl font-semibold font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-            I’m Danang Hapis Fadillah
+            Welcome to my portfolio website!
           </h1>
-          <p className="font-inter text-gray-500 tracking-wider text-sm font-extralight mt-1">
-            Hello my name is Danang Hapis Fadillah 19 years old. I am a Front
-            End Developer, I became interested in Front End world since 1 year
-            ago. I am also a stoic, a school of philosophy from a philosopher
-            from Citium, namely Zeno.
+          <p className="font-inter text-gray-400 tracking-wider text-sm font-extralight my-1">
+            I'm Danang Hapis Fadillah, a passionate 20-year-old{" "}
+            <span className="underline decoration-primary decoration-[1.5px] mr-1">
+              Web Developer specializing in Node.js.
+            </span>
+            I've been{" "}
+            <span className="underline decoration-primary decoration-[1.5px] mr-1">
+              freelancing at Fiverr
+            </span>{" "}
+            since 2022.
+          </p>
+          <p className="font-inter text-gray-400 tracking-wider text-sm font-extralight mt-2">
+            Lately, I've been{" "}
+            <span className="underline decoration-secondary decoration-[1.5px] mr-1">
+              diving deep
+            </span>{" "}
+            into the fascinating fields of{" "}
+            <span className="underline decoration-secondary decoration-[1.5px] mr-1">
+              Machine Learning and Deep Learning
+            </span>
+            , exploring the cutting-edge technologies that are shaping our
+            future. My journey{" "}
+            <span className="underline decoration-secondary decoration-[1.5px] mr-1">
+              as a member
+            </span>{" "}
+            of the{" "}
+            <span className="underline decoration-secondary decoration-[1.5px] mr-1">
+              Google Developer Student Club at the University of Indonesia
+            </span>
+            has further fueled my enthusiasm for tech innovation.
           </p>
           <div className="mt-5 flex items-center space-x-3">
             <ButtonPrimary
