@@ -48,22 +48,22 @@ export default function Heroes() {
         </div>
         <div className="w-full lg:w-6/12 z-0">
           <h3 className="text-sm text-white/30 font-josefin">Syncr0nate</h3>
-          <h1 className="text-3xl font-semibold font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
+          <h1 className="text-4xl font-semibold font-josefin text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
             Welcome to my portfolio website!
           </h1>
           <p className="font-inter text-gray-400 tracking-wider text-sm font-extralight my-1">
-            I'm Danang Hapis Fadillah, a passionate 20-year-old{" "}
+            I&apos;m Danang Hapis Fadillah, a passionate 20-year-old{" "}
             <span className="underline decoration-primary decoration-[1.5px] mr-1">
               Web Developer specializing in Node.js.
             </span>
-            I've been{" "}
+            I&apos;ve been{" "}
             <span className="underline decoration-primary decoration-[1.5px] mr-1">
               freelancing at Fiverr
             </span>{" "}
             since 2022.
           </p>
           <p className="font-inter text-gray-400 tracking-wider text-sm font-extralight mt-2">
-            Lately, I've been{" "}
+            Lately, I&apos;ve been{" "}
             <span className="underline decoration-secondary decoration-[1.5px] mr-1">
               diving deep
             </span>{" "}
