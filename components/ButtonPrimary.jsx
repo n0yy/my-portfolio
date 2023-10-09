@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export default function ButtonPrimary({ href, name }) {
   return (
-    <Link href={href}>
+    <Link href={href} target="_blank">
       <motion.div
         className="relative"
         whileHover={{ scale: 1.075 }}

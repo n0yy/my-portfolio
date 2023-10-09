@@ -83,10 +83,7 @@ export default function Heroes() {
             has further fueled my enthusiasm for tech innovation.
           </p>
           <div className="mt-5 flex items-center space-x-3">
-            <ButtonPrimary
-              href="https://resume.showwcase.com/syncr0nate.pdf"
-              name="View Resume"
-            />
+            <ButtonPrimary href="assets/files/resume.pdf" name="View Resume" />
             <ButtonSecondary
               href="https://github.com/syncr0nate"
               name="My Github"
