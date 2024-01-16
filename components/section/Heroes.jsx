@@ -85,7 +85,7 @@ export default function Heroes() {
           <div className="mt-5 flex items-center space-x-3">
             <ButtonPrimary href="assets/files/resume.pdf" name="View Resume" />
             <ButtonSecondary
-              href="https://github.com/syncr0nate"
+              href="https://github.com/n0yy"
               name="My Github"
               logo="/assets/logo/github.png"
             />
